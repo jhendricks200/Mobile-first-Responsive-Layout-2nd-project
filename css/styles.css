@@ -1,0 +1,354 @@
+/* Base Layout */
+
+* {
+  box-sizing: border-box;
+
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ img {
+  margin: 0 auto;
+  max-width: 350px;
+  width: 90%;
+  height: 55%;
+  position: center;
+}
+
+/* Main Layout Styles */
+nav,
+.Bottom-nav {
+  font-family: 'Work Sans', sans-serif;;
+  font-weight: 400;
+  letter-spacing: .05em;
+  background-color: red;
+  padding: 25px;
+}
+
+
+h1, .top-nav, .main-profile {
+  text-align: center;
+}
+
+.top-nav, .top-nav li {
+  width: 100%;
+}
+
+h1 a, .top-nav a {
+  color: #000;
+}
+
+.top-nav {
+  margin-top: 30px;
+}
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+  background-color: #fff;
+}
+
+.top-nav a {
+  text-transform: uppercase;
+}
+
+.main-profile img {
+ padding-top: 35px;
+
+}
+
+/* .col {
+ text-align: center;
+} */
+
+h1 {
+color: red;
+
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Footer {
+ padding: 0px;
+ margin: 0px;
+ background-color: lightgray;
+ border-bottom: ridge;
+ text-align: center;
+ }
+
+h2 {
+text-align: center;
+}
+
+.footer-p,
+.number{
+  margin: 5px;
+  margin-bottom: 5px;
+  padding: inherit;
+}
+
+.col {
+  margin: 10px;
+  min-height: 250px;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+
+.column {
+font-family: 'Work Sans', sans-serif;;
+font-weight: 400;
+letter-spacing: .05em;
+padding: 25px;
+}
+
+.Bottom-nav,
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding: 0px;
+  margin: 0px;
+  background-color: lightgray;
+}
+
+.bottom-nav li.{
+
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 0;
+    margin: 5px 15px;
+    text-align: right;
+    width: 70%;
+}
+
+.bottom-nav li.full {
+  display: none;
+}
+
+
+
+
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  .bottom-nav li.top {
+    display: none;
+  }
+
+
+
+  .top-nav{
+    margin-top: 0;
+}
+
+.columns {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc(50% - 20px);
+}
+
+.one,
+.two {
+ flex: 50%;
+}
+
+.three,
+.four{
+ flex: 50%;
+}
+
+.five,
+.six {
+  flex: 50%;
+}
+ /* .flex-container,
+.top-nav,
+
+{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+} */
+
+.main-profile {
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+ justify-content: center;
+ }
+
+ /* .col {
+   flex: 1;
+
+ } */
+
+ /* .column {
+   flex: 50%;
+   padding: 10px;
+   height: auto;
+ } */
+
+
+
+.flex-container {
+ flex-direction: column;
+ align-items: center;
+justify-content: space-around;
+
+}
+
+  .top-nav li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
+
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
+
+  .top-nav a {
+    color: #fff;
+  }
+}
+
+@media (min-width: 1024px) {
+   /* nav,{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   } */
+
+  .bottom-nav li .top {
+  display: none;
+}
+
+   .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+   }
+
+   .col {
+       flex-basis: calc(50% - 20px);
+   }
+
+  .top-nav,
+  .top-nav li {
+    width: initial;
+    margin-bottom: 0;
+  }
+
+  .flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+  .main-profile {
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+ justify-content: space-around;
+ }
+
+ .top-image {
+  padding-left: 50px;
+  margin: 5 auto;
+  max-width: 350px;
+  width: 90%;
+  height: 55%;
+}
+
+
+
+.one,
+.two,
+.three {
+  flex: 33%;
+  flex-direction: column;
+}
+
+.four,
+.five,
+.six {
+  flex: 33%;
+  flex-direction: row;
+}
+
+
+
+
+/* .columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px;
+  }
+
+  .column {
+   flex: 1;
+   margin: 5px;
+   padding: 5px;
+  } */
+/*
+.column: first-child {
+  margin-left: 0;
+}
+
+.column: last-child {
+  margin-right: 0;
+} */
+
+
+
+
+
+
+/* .column {
+  flex: 50%;
+  padding: 10px;
+  height: auto;
+} */
+
+
+
+
+
+
+
+
+
+
+}
