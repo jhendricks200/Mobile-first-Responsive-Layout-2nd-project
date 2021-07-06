@@ -158,7 +158,9 @@ padding: 25px;
   .bottom-nav li.top {
     display: none;
   }
-
+  .bottom-nav li.full {
+    display: inline-block;
+  }
 
 
   .top-nav{
