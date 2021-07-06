@@ -83,7 +83,8 @@ a {
   text-decoration: none;
 }
 
-.Footer {
+.Footer,
+.skills {
  padding: 0px;
  margin: 0px;
  background-color: lightgray;
@@ -129,7 +130,7 @@ padding: 25px;
   background-color: lightgray;
 }
 
-.bottom-nav li.{
+.bottom-nav li{
 
     display: inline-block;
     margin-top: auto;
