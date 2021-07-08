@@ -96,18 +96,23 @@ text-align: center;
 
 .footer-p,
 .number{
-  margin: 5px;
+  /* margin: 5px;
   margin-bottom: 5px;
   padding: inherit;
+  text-align: center; */
 }
 
 
 
-.column {
+.columns p {
 font-family: 'Work Sans', sans-serif;;
 font-weight: 400;
-letter-spacing: .05em;
-padding: 25px;
+/* letter-spacing: .05em; */
+/* padding: 10px;
+margin: 15px: */
+font-stretch: extra-condensed;
+
+
 }
 
 .Bottom-nav,
@@ -147,12 +152,31 @@ width: 100%;
 padding-left: 5px;
 text-align: center;
 
+
 }
 
 .top  {
   padding-right: 1px;
   flex-shrink: 0;
 }
+
+#portfolio {
+ margin: 15px 15px;
+ padding: 10px 15px;
+}
+
+.OneP,
+.TwoP,
+.ThreeP,
+.FourP,
+.FiveP,
+.SixP {
+padding-left: 5px:
+padding-right: 5px;
+
+}
+
+
 
 
 
